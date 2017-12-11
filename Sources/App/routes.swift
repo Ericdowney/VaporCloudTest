@@ -20,5 +20,8 @@ final class Routes: RouteCollection {
         router.get("hello") { req in
             return "Hello, world!"
         }
+        router.get("json") { req in
+            return "{\"a\": \"b\"}"
+        }
     }
 }
